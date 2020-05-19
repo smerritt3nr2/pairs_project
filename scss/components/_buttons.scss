@@ -1,1 +1,53 @@
-//rtjhartjratjrtajrta
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:175px;
+  width: 50px;
+  height: 50px;
+  background-color:  #4747476e;
+  border-radius: 50%;
+  cursor: pointer; 
+  z-index: 10; /* Sit on top of everything */
+  border: 1px solid rgb(253, 253, 253);
+}
+.carousel__button--prev {
+  left:20px;
+}
+.carousel__button--next {
+  right:20px;
+}
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.dots-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 10;
+  top: 350px;
+  left: 39%;
+  width: 350px;
+  height: 50px;
+  .dot {
+    border-radius: 50%;
+    background-color: #b6b6b6b9;
+    height: 15px;
+    width: 15px;
+  }
+  .dot:hover {
+    background-color: #fcfcfcec;
+  }
+}

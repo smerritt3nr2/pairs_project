@@ -2,9 +2,29 @@
 <html>
     <head>   
         <link rel="stylesheet" href="css/nmcss.css">
-        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
     </head>
     <body>
-        <h1>Terracotta</h1>
+        <div class="carousel-wrapper">
+            <div class="carousel">
+              <div class="carousel-overlay"></div>
+                <div class="carousel__photo active slide-one"><img  src="./img/slideshow1.jpg"></div>
+                <img class="carousel__photo slide-two" src="./img/slideshow2.jpg">
+                <img class="carousel__photo slide-three" src="./img/slideshow3.jpg">
+                <img class="carousel__photo slide-four" src="./img/slideshow4.jpg">
+              
+                  
+                <div class="carousel__button--next"></div>
+                <div class="carousel__button--prev"></div>
+                <div class="dots-container">
+                  <div class="dot dot-one"></div>
+                  <div class="dot dot-two"></div>
+                  <div class="dot dot-three"></div>
+                  <div class="dot dot-four"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <script src="./js/carousel.js"></script>
     </body>
 </html>

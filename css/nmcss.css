@@ -507,11 +507,120 @@ ul, ol {
   margin: 0;
 }
 
-/* line 3, ../../Pairs-Project/scss/base/_base.scss */
-h1 {
-  font-family: 'Pacifico';
-  font-size: 22px;
-  color: red;
+/* line 1, ../../Pairs-Project/scss/components/_buttons.scss */
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top: 175px;
+  width: 50px;
+  height: 50px;
+  background-color: #4747476e;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  /* Sit on top of everything */
+  border: 1px solid #fdfdfd;
+}
+
+/* line 13, ../../Pairs-Project/scss/components/_buttons.scss */
+.carousel__button--prev {
+  left: 20px;
+}
+
+/* line 16, ../../Pairs-Project/scss/components/_buttons.scss */
+.carousel__button--next {
+  right: 20px;
+}
+
+/* line 19, ../../Pairs-Project/scss/components/_buttons.scss */
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+/* line 31, ../../Pairs-Project/scss/components/_buttons.scss */
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* line 35, ../../Pairs-Project/scss/components/_buttons.scss */
+.dots-container {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 10;
+  top: 350px;
+  left: 39%;
+  width: 350px;
+  height: 50px;
+}
+
+/* line 44, ../../Pairs-Project/scss/components/_buttons.scss */
+.dots-container .dot {
+  border-radius: 50%;
+  background-color: #b6b6b6b9;
+  height: 15px;
+  width: 15px;
+}
+
+/* line 50, ../../Pairs-Project/scss/components/_buttons.scss */
+.dots-container .dot:hover {
+  background-color: #fcfcfcec;
+}
+
+/* line 1, ../../Pairs-Project/scss/components/_images.scss */
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  margin-top: 500px;
+}
+
+/* line 7, ../../Pairs-Project/scss/components/_images.scss */
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+
+/* line 10, ../../Pairs-Project/scss/components/_images.scss */
+.carousel {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 200px;
+}
+
+/* line 15, ../../Pairs-Project/scss/components/_images.scss */
+.carousel-overlay {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #2727279a;
+  opacity: 0.7;
+}
+
+/* line 25, ../../Pairs-Project/scss/components/_images.scss */
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top: -235%;
+  width: 100%;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+/* line 34, ../../Pairs-Project/scss/components/_images.scss */
+.carousel__photo.active {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=nmcss.css.map */
