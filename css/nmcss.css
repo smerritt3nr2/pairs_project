@@ -507,6 +507,100 @@ ul, ol {
   margin: 0;
 }
 
+/* line 3, ../../Pairs-Project/scss/base/_base.scss */
+h1 {
+  font-family: 'Pacifico';
+  font-size: 22px;
+  color: red;
+}
+
+/* line 9, ../../Pairs-Project/scss/base/_base.scss */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50em;
+}
+
+/* line 15, ../../Pairs-Project/scss/base/_base.scss */
+header {
+  background: url("../img/lobster-head.jpg");
+  background-size: cover;
+}
+
+/* line 20, ../../Pairs-Project/scss/base/_base.scss */
+footer {
+  background: #af473c;
+  color: white;
+}
+
+/* ============== Navigation bar ======================= */
+/* line 27, ../../Pairs-Project/scss/base/_base.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #af473c;
+}
+
+/* line 35, ../../Pairs-Project/scss/base/_base.scss */
+li {
+  float: right;
+}
+
+/* line 39, ../../Pairs-Project/scss/base/_base.scss */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* line 47, ../../Pairs-Project/scss/base/_base.scss */
+li a:hover {
+  text-decoration: underline;
+}
+
+/* =============== Article Area ==================== */
+/* line 53, ../../Pairs-Project/scss/base/_base.scss */
+.column {
+  float: left;
+  width: 33.33%;
+  max-width: 30%;
+  margin-left: auto;
+}
+
+/* line 60, ../../Pairs-Project/scss/base/_base.scss */
+.column-img {
+  position: relative;
+  display: inline-block;
+  max-width: 50%;
+}
+
+/* line 66, ../../Pairs-Project/scss/base/_base.scss */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* =============== Sub Footer ======================== */
+/* line 74, ../../Pairs-Project/scss/base/_base.scss */
+.book-bar {
+  background-color: #3c3c3c;
+  color: white;
+  text-align: left;
+  padding: 1.5%;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 83, ../../Pairs-Project/scss/base/_base.scss */
+.button {
+  display: inline-block;
+}
+
 /* line 1, ../../Pairs-Project/scss/components/_buttons.scss */
 .carousel__button--prev,
 .carousel__button--next {

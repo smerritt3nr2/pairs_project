@@ -1,0 +1,85 @@
+
+  
+  h1 {
+    font-family: 'Pacifico';
+    font-size: 22px;
+    color: red;
+  }
+
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+  }
+
+  header{
+    background: url('../img/lobster-head.jpg');
+    background-size:cover;
+  }
+
+  footer {
+    background: #af473c;
+    color:white;
+  }
+
+/* ============== Navigation bar ======================= */
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #af473c;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    text-decoration: underline;
+  }
+
+/* =============== Article Area ==================== */
+
+  .column {
+    float: left;
+    width: 33.33%;
+    max-width: 30%;
+    margin-left: auto;
+  }
+
+  .column-img{
+    position: relative;
+    display: inline-block;
+    max-width: 50%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* =============== Sub Footer ======================== */
+
+  .book-bar {
+    background-color: #3c3c3c;
+    color: white;
+    text-align: left;
+    padding:1.5%;
+    display:block;
+    overflow:hidden;
+  }
+
+  .button {
+    display:inline-block;
+  }
