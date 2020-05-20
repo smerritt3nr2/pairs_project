@@ -522,17 +522,23 @@ ul, ol {
   border: 1px solid #fdfdfd;
 }
 
-/* line 13, ../../Pairs-Project/scss/components/_buttons.scss */
+/* line 12, ../../Pairs-Project/scss/components/_buttons.scss */
+.carousel__button--prev:hover,
+.carousel__button--next:hover {
+  background-color: #c2c2c26e;
+}
+
+/* line 16, ../../Pairs-Project/scss/components/_buttons.scss */
 .carousel__button--prev {
   left: 20px;
 }
 
-/* line 16, ../../Pairs-Project/scss/components/_buttons.scss */
+/* line 19, ../../Pairs-Project/scss/components/_buttons.scss */
 .carousel__button--next {
   right: 20px;
 }
 
-/* line 19, ../../Pairs-Project/scss/components/_buttons.scss */
+/* line 22, ../../Pairs-Project/scss/components/_buttons.scss */
 .carousel__button--prev::after,
 .carousel__button--next::after {
   content: " ";
@@ -546,13 +552,13 @@ ul, ol {
   transform: translate(-50%, -50%) rotate(135deg);
 }
 
-/* line 31, ../../Pairs-Project/scss/components/_buttons.scss */
+/* line 34, ../../Pairs-Project/scss/components/_buttons.scss */
 .carousel__button--next::after {
   left: 47%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* line 35, ../../Pairs-Project/scss/components/_buttons.scss */
+/* line 38, ../../Pairs-Project/scss/components/_buttons.scss */
 .dots-container {
   position: absolute;
   display: flex;
@@ -564,16 +570,17 @@ ul, ol {
   height: 50px;
 }
 
-/* line 44, ../../Pairs-Project/scss/components/_buttons.scss */
+/* line 47, ../../Pairs-Project/scss/components/_buttons.scss */
 .dots-container .dot {
   border-radius: 50%;
   background-color: #b6b6b6b9;
   height: 15px;
   width: 15px;
+  cursor: pointer;
 }
 
-/* line 50, ../../Pairs-Project/scss/components/_buttons.scss */
-.dots-container .dot:hover {
+/* line 54, ../../Pairs-Project/scss/components/_buttons.scss */
+.dots-container .dot:hover, .dots-container .active {
   background-color: #fcfcfcec;
 }
 
