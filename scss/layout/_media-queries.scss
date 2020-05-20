@@ -1,1 +1,99 @@
 //rkhrmhkierhkrne
+body {
+    margin: 0px;
+    width: 100%;
+}
+.main-container {
+   width: 80%;
+   margin: 0px auto;
+}
+.main-title, .main-about, .service-title, .service-desc, .carousel-quote, .quote-author{
+    font-family: 'Baloo Thambi 2';
+    font-size: 20px;
+}
+
+.main-title {
+    font-size: 50px;
+    color: #af473c;
+    margin: 70px 0 8px;
+}
+.title-underline {
+    content: "";
+    display: block;
+    background-color: black;
+    width: 200px;
+    height: 1px;
+}
+.main-about {
+    margin: 50px 0 0;
+}
+.inner-about {
+    font-weight: bold;
+    color: #af473c;
+}
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 70px 0 0;
+}
+.service-container {
+    width: 450px;
+}
+.service-image-container {
+    overflow: hidden;
+    width: 450px;
+    height: 225px;
+}
+.service-image {
+    width: 450px;
+   
+}
+.service-title {
+    font-size: 30px;
+    color: #af473c;
+    text-align: center;
+    margin-top: 15px;
+}
+.service-underline {
+    content: "";
+    display: block;
+    background-color: black;
+    width: 130px;
+    height: 1px;
+    margin: 20px 0 20px 160px;
+}
+.service-desc {
+    text-align: center;
+}
+.carousel-quote, .quote-author {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.carousel-text-overlay {
+    width: 70%;
+    margin: 80px auto 0;
+}
+.fas {
+    color: white;
+    transform: scale(2);
+}
+.fa-quote-left {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.fa-quote-right {
+    position: absolute;
+    top: 44%;
+    right: 10%;
+}
+.quote-underline {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 400px;
+    height: 1px;
+    margin: 25px auto;
+}

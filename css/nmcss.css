@@ -507,34 +507,27 @@ ul, ol {
   margin: 0;
 }
 
-/* line 3, ../../Pairs-Project/scss/base/_base.scss */
-h1 {
-  font-family: 'Pacifico';
-  font-size: 22px;
-  color: red;
-}
-
-/* line 9, ../../Pairs-Project/scss/base/_base.scss */
+/* line 2, ../../Pairs-Project/scss/base/_base.scss */
 body {
   margin-left: auto;
   margin-right: auto;
   width: 50em;
 }
 
-/* line 15, ../../Pairs-Project/scss/base/_base.scss */
+/* line 8, ../../Pairs-Project/scss/base/_base.scss */
 header {
   background: url("../img/lobster-head.jpg");
   background-size: cover;
 }
 
-/* line 20, ../../Pairs-Project/scss/base/_base.scss */
+/* line 13, ../../Pairs-Project/scss/base/_base.scss */
 footer {
   background: #af473c;
   color: white;
 }
 
 /* ============== Navigation bar ======================= */
-/* line 27, ../../Pairs-Project/scss/base/_base.scss */
+/* line 20, ../../Pairs-Project/scss/base/_base.scss */
 ul {
   list-style-type: none;
   margin: 0;
@@ -543,12 +536,12 @@ ul {
   background-color: #af473c;
 }
 
-/* line 35, ../../Pairs-Project/scss/base/_base.scss */
+/* line 28, ../../Pairs-Project/scss/base/_base.scss */
 li {
   float: right;
 }
 
-/* line 39, ../../Pairs-Project/scss/base/_base.scss */
+/* line 32, ../../Pairs-Project/scss/base/_base.scss */
 li a {
   display: block;
   color: white;
@@ -557,13 +550,13 @@ li a {
   text-decoration: none;
 }
 
-/* line 47, ../../Pairs-Project/scss/base/_base.scss */
+/* line 40, ../../Pairs-Project/scss/base/_base.scss */
 li a:hover {
   text-decoration: underline;
 }
 
 /* =============== Article Area ==================== */
-/* line 53, ../../Pairs-Project/scss/base/_base.scss */
+/* line 46, ../../Pairs-Project/scss/base/_base.scss */
 .column {
   float: left;
   width: 33.33%;
@@ -571,14 +564,14 @@ li a:hover {
   margin-left: auto;
 }
 
-/* line 60, ../../Pairs-Project/scss/base/_base.scss */
+/* line 53, ../../Pairs-Project/scss/base/_base.scss */
 .column-img {
   position: relative;
   display: inline-block;
   max-width: 50%;
 }
 
-/* line 66, ../../Pairs-Project/scss/base/_base.scss */
+/* line 59, ../../Pairs-Project/scss/base/_base.scss */
 .row:after {
   content: "";
   display: table;
@@ -586,7 +579,7 @@ li a:hover {
 }
 
 /* =============== Sub Footer ======================== */
-/* line 74, ../../Pairs-Project/scss/base/_base.scss */
+/* line 67, ../../Pairs-Project/scss/base/_base.scss */
 .book-bar {
   background-color: #3c3c3c;
   color: white;
@@ -596,7 +589,7 @@ li a:hover {
   overflow: hidden;
 }
 
-/* line 83, ../../Pairs-Project/scss/base/_base.scss */
+/* line 76, ../../Pairs-Project/scss/base/_base.scss */
 .button {
   display: inline-block;
 }
@@ -659,7 +652,7 @@ li a:hover {
   justify-content: space-evenly;
   z-index: 10;
   top: 350px;
-  left: 39%;
+  left: 40.5%;
   width: 350px;
   height: 50px;
 }
@@ -683,7 +676,7 @@ li a:hover {
   overflow: hidden;
   width: 100%;
   height: 400px;
-  margin-top: 500px;
+  margin-top: 100px;
 }
 
 /* line 7, ../../Pairs-Project/scss/components/_images.scss */
@@ -719,9 +712,145 @@ li a:hover {
   transition: transform .5s, opacity .5s, z-index .5s;
 }
 
-/* line 34, ../../Pairs-Project/scss/components/_images.scss */
+/* line 33, ../../Pairs-Project/scss/components/_images.scss */
 .carousel__photo.active {
   opacity: 1;
+}
+
+/* line 2, ../../Pairs-Project/scss/layout/_media-queries.scss */
+body {
+  margin: 0px;
+  width: 100%;
+}
+
+/* line 6, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.main-container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+/* line 10, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.main-title, .main-about, .service-title, .service-desc, .carousel-quote, .quote-author {
+  font-family: 'Baloo Thambi 2';
+  font-size: 20px;
+}
+
+/* line 15, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.main-title {
+  font-size: 50px;
+  color: #af473c;
+  margin: 70px 0 8px;
+}
+
+/* line 20, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.title-underline {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 200px;
+  height: 1px;
+}
+
+/* line 27, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.main-about {
+  margin: 50px 0 0;
+}
+
+/* line 30, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.inner-about {
+  font-weight: bold;
+  color: #af473c;
+}
+
+/* line 34, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 70px 0 0;
+}
+
+/* line 40, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.service-container {
+  width: 450px;
+}
+
+/* line 43, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.service-image-container {
+  overflow: hidden;
+  width: 450px;
+  height: 225px;
+}
+
+/* line 48, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.service-image {
+  width: 450px;
+}
+
+/* line 52, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.service-title {
+  font-size: 30px;
+  color: #af473c;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* line 58, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.service-underline {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 130px;
+  height: 1px;
+  margin: 20px 0 20px 160px;
+}
+
+/* line 66, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.service-desc {
+  text-align: center;
+}
+
+/* line 69, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.carousel-quote, .quote-author {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* line 74, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.carousel-text-overlay {
+  width: 70%;
+  margin: 80px auto 0;
+}
+
+/* line 78, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.fas {
+  color: white;
+  transform: scale(2);
+}
+
+/* line 82, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.fa-quote-left {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+/* line 87, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.fa-quote-right {
+  position: absolute;
+  top: 44%;
+  right: 10%;
+}
+
+/* line 92, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.quote-underline {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 400px;
+  height: 1px;
+  margin: 25px auto;
 }
 
 /*# sourceMappingURL=nmcss.css.map */
