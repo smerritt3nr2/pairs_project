@@ -2,6 +2,7 @@
 body {
     margin: 0px;
     width: 100%;
+    max-width: 100%;
 }
 .main-container {
    width: 80%;
@@ -96,4 +97,27 @@ body {
     width: 400px;
     height: 1px;
     margin: 25px auto;
+}
+
+
+/////////////////////////////////////////////////
+//  Partners page
+/////////////////////////////////////////////////
+.partner-title, .partner-underline {
+    margin-left: 10%;
+}
+.partners-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 140px;
+    margin: 70px auto;
+    .partner {
+        width:33%;
+        img {
+            display: block;
+            margin: auto;
+            filter: grayscale(100%);
+        }
+    }
 }
