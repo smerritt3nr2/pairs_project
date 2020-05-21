@@ -6,10 +6,14 @@
     color: red;
   }
 
+  .text-to-change {
+    font-family: 'Baloo Thambi 2';
+  }
+
   body {
     margin-left: auto;
     margin-right: auto;
-    width: 50em;
+    max-width: 50em;
   }
 
   header{
@@ -20,6 +24,50 @@
   footer {
     background: #af473c;
     color:white;
+  }
+
+  hr {
+    width:8.125em;
+  }
+
+/* ============== header Section ======================= */
+
+  .title-right {
+    text-align: right;
+    margin:0 50px 40px 0;
+  }
+
+  .title-left {
+    text-align: left;
+    margin:30px 0 0 60px;
+    display:block;
+  }
+
+  .title,
+  .sub-title {
+    display:table;
+  }
+
+  .top-header {
+    color:white;
+    margin: 0 20px 100px 0;
+    display:inline-block;
+  }
+
+  .book-header {
+    border:none;
+    color:white;
+    background: #af473c;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration:none;
+    width:6.25em;
+    cursor: pointer;
+  }
+
+  .fa-envelope {
+    width: 100px;
+    height: 100px;
   }
 
 /* ============== Navigation bar ======================= */
@@ -48,38 +96,52 @@
     text-decoration: underline;
   }
 
-/* =============== Article Area ==================== */
-
-  .column {
-    float: left;
-    width: 33.33%;
-    max-width: 30%;
-    margin-left: auto;
-  }
-
-  .column-img{
-    position: relative;
-    display: inline-block;
-    max-width: 50%;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
   /* =============== Sub Footer ======================== */
 
   .book-bar {
     background-color: #3c3c3c;
     color: white;
     text-align: left;
-    padding:1.5%;
+    padding:3%;
     display:block;
     overflow:hidden;
   }
 
   .button {
-    display:inline-block;
+    text-align: right;
+    margin: 10px;
+  }
+
+   /* =============== main Footer ======================== */
+
+  .foot-c1,
+  .foot-c2,
+  .foot-c3 {
+    max-width: 33.33%;
+    display: table-cell;
+    height: auto;
+    justify-content: space-between;
+    padding: 10px 10px 10px 100px;
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 11px;
+    padding: 0 0 5px 0;
+  }
+
+  h6 {
+    font-size:20px;
+    font-family: 'Baloo Thambi 2';
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    color:white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
   }
