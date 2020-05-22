@@ -520,57 +520,77 @@ h1 {
 }
 
 /* line 14, ../../Pairs-Project/scss/base/_base.scss */
-body {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50em;
-}
-
-/* line 20, ../../Pairs-Project/scss/base/_base.scss */
 header {
   background: url("../img/lobster-head.jpg");
   background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 30em;
 }
 
-/* line 25, ../../Pairs-Project/scss/base/_base.scss */
-footer {
-  background: #af473c;
-  color: white;
-}
-
-/* line 30, ../../Pairs-Project/scss/base/_base.scss */
-hr {
-  width: 8.125em;
+/* line 22, ../../Pairs-Project/scss/base/_base.scss */
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 /* ============== header Section ======================= */
-/* line 36, ../../Pairs-Project/scss/base/_base.scss */
-.title-right {
-  text-align: right;
-  margin: 0 50px 40px 0;
+/* line 30, ../../Pairs-Project/scss/base/_base.scss */
+.header-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
 }
 
-/* line 41, ../../Pairs-Project/scss/base/_base.scss */
+/* line 38, ../../Pairs-Project/scss/base/_base.scss */
+.title-right {
+  text-align: right;
+  width: 50%;
+  height: 3.75em;
+  text-transform: uppercase;
+}
+
+/* line 43, ../../Pairs-Project/scss/base/_base.scss */
+.title-right i {
+  padding-right: 0.625em;
+}
+
+/* line 48, ../../Pairs-Project/scss/base/_base.scss */
 .title-left {
   text-align: left;
-  margin: 30px 0 0 60px;
+  width: 50%;
   display: block;
 }
 
-/* line 47, ../../Pairs-Project/scss/base/_base.scss */
-.title,
-.sub-title {
-  display: table;
+/* line 52, ../../Pairs-Project/scss/base/_base.scss */
+.title-left h1 {
+  font-family: 'Pacifico';
+  font-size: 50px;
+  color: #af473c;
+  margin-bottom: 0px;
 }
 
-/* line 52, ../../Pairs-Project/scss/base/_base.scss */
+/* line 58, ../../Pairs-Project/scss/base/_base.scss */
+.title-left p {
+  font-family: 'Baloo Thambi 2';
+  font-size: 50px;
+  color: black;
+  z-index: 2;
+  margin-top: 0px;
+}
+
+/* line 67, ../../Pairs-Project/scss/base/_base.scss */
 .top-header {
   color: white;
   margin: 0 20px 100px 0;
   display: inline-block;
 }
 
-/* line 58, ../../Pairs-Project/scss/base/_base.scss */
+/* line 73, ../../Pairs-Project/scss/base/_base.scss */
 .book-header {
   border: none;
   color: white;
@@ -582,29 +602,78 @@ hr {
   cursor: pointer;
 }
 
-/* line 69, ../../Pairs-Project/scss/base/_base.scss */
-.fa-envelope {
-  width: 100px;
-  height: 100px;
+/* line 84, ../../Pairs-Project/scss/base/_base.scss */
+.title-topR {
+  padding-top: 0.625em;
+  height: 1.875em;
+}
+
+/* line 89, ../../Pairs-Project/scss/base/_base.scss */
+.title-lowR {
+  color: white;
+  text-align: -webkit-right;
+}
+
+/* line 92, ../../Pairs-Project/scss/base/_base.scss */
+.title-lowR h1 {
+  font-family: 'Baloo Thambi 2';
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: inherit;
+}
+
+/* line 99, ../../Pairs-Project/scss/base/_base.scss */
+.title-lowR p {
+  font-size: 1.6875em;
+  text-transform: none;
+}
+
+/* line 103, ../../Pairs-Project/scss/base/_base.scss */
+.title-lowR hr {
+  width: 9.125em;
+  align-self: right;
+  display: table-caption;
+}
+
+/* line 108, ../../Pairs-Project/scss/base/_base.scss */
+.title-lowR button {
+  height: 2.1em;
+  width: 40%;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 /* ============== Navigation bar ======================= */
-/* line 76, ../../Pairs-Project/scss/base/_base.scss */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+/* line 118, ../../Pairs-Project/scss/base/_base.scss */
+.nav-container {
+  width: 100%;
+  height: 50px;
   background-color: #af473c;
+  position: relative;
 }
 
-/* line 84, ../../Pairs-Project/scss/base/_base.scss */
-li {
-  float: right;
+/* line 125, ../../Pairs-Project/scss/base/_base.scss */
+.main-nav {
+  list-style-type: none;
+  overflow: hidden;
+  width: 600px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  position: absolute;
+  right: 10%;
+  text-transform: uppercase;
 }
 
-/* line 88, ../../Pairs-Project/scss/base/_base.scss */
-li a {
+/* line 136, ../../Pairs-Project/scss/base/_base.scss */
+.main-nav li {
+  width: 150px;
+}
+
+/* line 139, ../../Pairs-Project/scss/base/_base.scss */
+.main-nav li a {
   display: block;
   color: white;
   text-align: center;
@@ -612,64 +681,99 @@ li a {
   text-decoration: none;
 }
 
-/* line 96, ../../Pairs-Project/scss/base/_base.scss */
-li a:hover {
+/* line 146, ../../Pairs-Project/scss/base/_base.scss */
+.main-nav li a:hover {
   text-decoration: underline;
 }
 
 /* =============== Sub Footer ======================== */
-/* line 102, ../../Pairs-Project/scss/base/_base.scss */
-.book-bar {
+/* line 154, ../../Pairs-Project/scss/base/_base.scss */
+.book-container {
   background-color: #3c3c3c;
   color: white;
-  text-align: left;
-  padding: 3%;
-  display: block;
-  overflow: hidden;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-/* line 111, ../../Pairs-Project/scss/base/_base.scss */
-.button {
-  text-align: right;
-  margin: 10px;
+/* line 163, ../../Pairs-Project/scss/base/_base.scss */
+.book-container button {
+  height: auto;
+  width: 10%;
+  align-self: center;
+  border: none;
+  color: darkgoldenrod;
+  padding: 0.5%;
+  font-size: 0.8125em;
+}
+
+/* line 172, ../../Pairs-Project/scss/base/_base.scss */
+.book-container p {
+  width: 40%;
+  text-align: center;
 }
 
 /* =============== main Footer ======================== */
-/* line 118, ../../Pairs-Project/scss/base/_base.scss */
-.foot-c1,
-.foot-c2,
-.foot-c3 {
-  max-width: 33.33%;
-  display: table-cell;
-  height: auto;
-  justify-content: space-between;
-  padding: 10px 10px 10px 100px;
+/* line 181, ../../Pairs-Project/scss/base/_base.scss */
+.footer-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
 }
 
-/* line 128, ../../Pairs-Project/scss/base/_base.scss */
-.copyright {
-  text-align: center;
-  font-size: 11px;
-  padding: 0 0 5px 0;
+/* line 189, ../../Pairs-Project/scss/base/_base.scss */
+.column-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #af473c;
+  color: white;
+  justify-content: space-evenly;
+  font-family: 'Baloo Thambi 2';
 }
 
-/* line 134, ../../Pairs-Project/scss/base/_base.scss */
-h6 {
+/* line 196, ../../Pairs-Project/scss/base/_base.scss */
+.column-container h6 {
   font-size: 20px;
   font-family: 'Baloo Thambi 2';
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-/* line 141, ../../Pairs-Project/scss/base/_base.scss */
-a {
+/* line 202, ../../Pairs-Project/scss/base/_base.scss */
+.column-container a {
   color: white;
   text-decoration: none;
 }
 
-/* line 146, ../../Pairs-Project/scss/base/_base.scss */
-a:hover {
+/* line 206, ../../Pairs-Project/scss/base/_base.scss */
+.column-container a:hover {
   text-decoration: underline;
+}
+
+/* line 209, ../../Pairs-Project/scss/base/_base.scss */
+.column-container hr {
+  width: 8.125em;
+  align-self: left;
+  display: table-caption;
+}
+
+/* line 217, ../../Pairs-Project/scss/base/_base.scss */
+.foot-c3 i {
+  padding-right: 0.625em;
+}
+
+/* line 222, ../../Pairs-Project/scss/base/_base.scss */
+.copyright {
+  text-align: center;
+  font-size: 11px;
+  padding: 0 0 5px 0;
+  background-color: #af473c;
+  color: white;
 }
 
 /* line 1, ../../Pairs-Project/scss/components/_buttons.scss */
@@ -803,13 +907,13 @@ body {
 }
 
 /* line 7, ../../Pairs-Project/scss/layout/_media-queries.scss */
-.main-container {
+.main-container, .testimonial-container, .about-container {
   width: 80%;
   margin: 0px auto;
 }
 
 /* line 11, ../../Pairs-Project/scss/layout/_media-queries.scss */
-.main-title, .main-about, .service-title, .service-desc, .carousel-quote, .quote-author {
+.main-title, .main-about, .service-title, .service-desc, .carousel-quote, .quote-author, .about, .as-title, .wf-overlay-text {
   font-family: 'Baloo Thambi 2';
   font-size: 20px;
 }
@@ -956,6 +1060,102 @@ body {
   display: block;
   margin: auto;
   filter: grayscale(100%);
+}
+
+/* line 130, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.about-container .title-underline {
+  margin-bottom: 70px;
+}
+
+/* line 134, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.workforce-image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 140, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.wf-image-one {
+  background-image: url("../img/workforce.jpg");
+  min-height: 600px;
+}
+
+/* line 144, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.wf-image-two {
+  background-image: url("../img/workforceDiversity.jpg");
+  min-height: 400px;
+}
+
+/* line 148, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.wf-image-three {
+  background-image: url("../img/workforceHappy.jpg");
+  min-height: 500px;
+}
+
+/* line 152, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.wf-image-four {
+  background-image: url("../img/workforceKaren.PNG");
+  min-height: 100vh;
+}
+
+/* line 157, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.about-section .as-title {
+  font-size: 30px;
+  padding: 50px 0 8px;
+}
+
+/* line 162, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.as-one {
+  height: 300px;
+}
+
+/* line 164, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.as-one .as-title {
+  color: #af473c;
+}
+
+/* line 168, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.as-two {
+  height: 300px;
+  background-color: #af473c;
+}
+
+/* line 172, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.as-three {
+  height: 400px;
+  background-color: #3c3c3c;
+  color: white;
+}
+
+/* line 176, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.as-three .as-underline {
+  background-color: white;
+}
+
+/* line 180, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.wf-overlay-container {
+  position: relative;
+}
+
+/* line 183, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.workforce-overlay {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #2727279a;
+  opacity: 0.7;
+}
+
+/* line 193, ../../Pairs-Project/scss/layout/_media-queries.scss */
+.wf-overlay-text {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 49vh;
 }
 
 /*# sourceMappingURL=nmcss.css.map */

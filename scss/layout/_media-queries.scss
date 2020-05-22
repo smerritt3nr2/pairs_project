@@ -4,11 +4,11 @@ body {
     width: 100%;
     max-width: 100%;
 }
-.main-container {
+.main-container, .testimonial-container, .about-container {
    width: 80%;
    margin: 0px auto;
 }
-.main-title, .main-about, .service-title, .service-desc, .carousel-quote, .quote-author{
+.main-title, .main-about, .service-title, .service-desc, .carousel-quote, .quote-author, .about, .as-title, .wf-overlay-text{
     font-family: 'Baloo Thambi 2';
     font-size: 20px;
 }
@@ -121,3 +121,78 @@ body {
         }
     }
 }
+
+
+/////////////////////////////////////////////////
+//  About us page
+/////////////////////////////////////////////////
+.about-container {
+    .title-underline {
+        margin-bottom: 70px;
+    }
+}
+.workforce-image {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wf-image-one {
+    background-image: url("../img/workforce.jpg");
+    min-height: 600px; 
+}
+.wf-image-two {
+    background-image: url("../img/workforceDiversity.jpg");
+    min-height: 400px; 
+}
+.wf-image-three {
+    background-image: url("../img/workforceHappy.jpg");
+    min-height: 500px; 
+}
+.wf-image-four {
+    background-image: url("../img/workforceKaren.PNG");
+    min-height: 100vh;
+}
+.about-section {
+    .as-title {
+        font-size: 30px;
+        padding: 50px 0 8px;
+    }
+}
+.as-one {
+    height: 300px;
+    .as-title {
+        color: #af473c;
+    }
+}
+.as-two {
+    height: 300px;
+    background-color: #af473c; 
+}
+.as-three {
+    height: 400px;
+   background-color:  #3c3c3c;
+   color: white;
+   .as-underline {
+       background-color: white;
+   }
+}
+.wf-overlay-container {
+    position: relative;
+}
+.workforce-overlay {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #2727279a;
+    opacity: 0.7;
+  }
+  .wf-overlay-text {
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      padding-top: 49vh;
+  }
