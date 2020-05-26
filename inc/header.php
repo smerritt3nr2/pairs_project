@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>   
-        <link rel="stylesheet" href="../css/nmcss.css">
-        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Baloo Thambi 2' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    </head>
-    <body>
-        <!-- This is the code I have done so far, The CSS model for it is in nmcss.css -->
-        <!-- if its in the wrong area I can change it to another CSS location -->
+
         <header>
             <div class="overlay">
                 <div class="header-container">
@@ -35,12 +24,10 @@
         <nav>
                 <div class="nav-container">
                     <ul class="main-nav">
-                        <li><a href="#">about us</a></li>
+                        <li><a href="http://localhost:1234/Pairs-Project/inc/about.php">about us</a></li>
                         <li><a href="#">services</a></li>
                         <li><a href="#">testimonals</a></li>
-                        <li><a href="#">contacts</a></li>
+                        <li><a href="http://localhost:1234/Pairs-Project/inc/contact.php">contacts</a></li>
                     </ul>
                 </div>
             </nav>
-    </body>
-</html>

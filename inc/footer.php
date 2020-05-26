@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>   
-        <link rel="stylesheet" href="../css/nmcss.css">
-        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Baloo Thambi 2' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <style></style>
-    <body>
-        <!-- Footer codes are placed within Flexbox elements -->
+
         <footer class="clearfix">
             <div class="foot-container">
                 <div class="book-container">
@@ -48,5 +38,3 @@
             </div>
                     <div class="copyright">COPYRIGHT &copy; TERRACOTTA CATERING. ALL RIGHTS RESERVED 2019</div>
             </footer>
-    </body>
-</html>

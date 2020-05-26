@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>   
-        <link rel="stylesheet" href="../css/nmcss.css">
-        <link href='https://fonts.googleapis.com/css?family=Baloo Thambi 2' rel='stylesheet'>
-        <script src="https://kit.fontawesome.com/242368e4d2.js" crossorigin="anonymous"></script>
+    <title>About Us</title>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/nmcss.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Thambi 2' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     </head>
     <body>
+    <!-- Header -->   
+    <?php
+    include(__DIR__ . '/header.php');
+    ?>
+    <!-- Header -->
       <div class="about-container">
         <div class="main-title">ABOUT US</div>
         <span class="title-underline"></span>
@@ -33,5 +43,10 @@
             </div>
         </div>
         <div class="workforce-image wf-image-four"></div>
+    <!-- Footer -->   
+    <?php
+    include(__DIR__ . '/footer.php');
+    ?>
+    <!-- Footer -->
     </body>
 </html>

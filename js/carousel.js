@@ -103,7 +103,7 @@ function carousel() {
       slideArray[slide].classList.add('active');
       dotArray[slide].classList.add('active');
       
-      setTimeout(carousel, 8000); // Change image every 2 seconds
+      setTimeout(carousel, 8000);
     }
   }
 }

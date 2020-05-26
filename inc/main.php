@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>   
-        <link rel="stylesheet" href="../css/nmcss.css">
-        <link href='https://fonts.googleapis.com/css?family=Baloo Thambi 2' rel='stylesheet'>
-        <script src="https://kit.fontawesome.com/242368e4d2.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
+
       <div class="main-container">
         <div class="main-title">CATERING FOR ANY OCCASION</div>
         <span class="title-underline"></span>
@@ -16,7 +9,7 @@
         <div class="services-container">
           <div class="service-container">
             <div class="service-image-container">
-              <img class="service-image" src="../img/pouring-drink-column1.jpg">
+              <img class="service-image" src="img/pouring-drink-column1.jpg">
             </div>
             <div class="service-title">CORPORATE</div>
             <span class="service-underline"></span>
@@ -24,7 +17,7 @@
           </div>
           <div class="service-container">
             <div class="service-image-container">
-              <img class="service-image" src="../img/food-column2.jpg">
+              <img class="service-image" src="img/food-column2.jpg">
             </div>
             <div class="service-title">WEDDINGS</div>
             <span class="service-underline"></span>
@@ -32,7 +25,7 @@
           </div>
           <div class="service-container">
             <div class="service-image-container">
-              <img class="service-image" src="../img/buffay-column3.jpg">
+              <img class="service-image" src="img/buffay-column3.jpg">
             </div>
             <div class="service-title">EVENTS</div>
             <span class="service-underline"></span>
@@ -51,10 +44,10 @@
               <div class="quote-author">RONI HERDYANZAH<br>ADANE ENERGY</div>
             </div>
           </div>
-            <div class="carousel__photo active slide-one"><img  src="../img/slideshow1.jpg"></div>
-            <img class="carousel__photo slide-two" src="../img/slideshow2.jpg">
-            <img class="carousel__photo slide-three" src="../img/slideshow3.jpg">
-            <img class="carousel__photo slide-four" src="../img/slideshow4.jpg">
+            <div class="carousel__photo active slide-one"><img  src="img/slideshow1.jpg"></div>
+            <img class="carousel__photo slide-two" src="img/slideshow2.jpg">
+            <img class="carousel__photo slide-three" src="img/slideshow3.jpg">
+            <img class="carousel__photo slide-four" src="img/slideshow4.jpg">
           
               
             <div class="carousel__button--next"></div>
@@ -68,8 +61,3 @@
           </div>
         </div>
       </div>
-      
-      
-      <script src="../js/carousel.js"></script>
-    </body>
-</html>

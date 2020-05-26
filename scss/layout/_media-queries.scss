@@ -1,14 +1,13 @@
-//rkhrmhkierhkrne
 body {
     margin: 0px;
     width: 100%;
     max-width: 100%;
 }
-.main-container, .testimonial-container, .about-container {
+.main-container, .testimonial-container, .about-container, .contact-container {
    width: 80%;
    margin: 0px auto;
 }
-.main-title, .main-about, .service-title, .service-desc, .carousel-quote, .quote-author, .about, .as-title, .wf-overlay-text{
+.main-title, .main-about, .service-title, .service-desc, .carousel-quote, .quote-author, .about, .as-title, .wf-overlay-text, .contact-text{
     font-family: 'Baloo Thambi 2';
     font-size: 20px;
 }
