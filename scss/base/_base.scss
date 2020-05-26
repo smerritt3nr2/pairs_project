@@ -27,6 +27,7 @@
   }
 
 /* ============== header Section ======================= */
+
 .header-container {
   width:80%;
   margin-left: auto;
@@ -225,4 +226,64 @@
     padding: 0 0 5px 0;
     background-color: #af473c;
     color:white;
+  }
+
+  /* ============== Contact us form ======================= */
+
+  .contact-container {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .form-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    box-shadow: 2px 2px 4px #000000;
+    input {
+      margin-bottom: 10px;
+    }
+    textarea {
+      margin-bottom:10px;
+    }
+  }
+
+  .checkbox {
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: row;
+  }
+
+  .sub-title {
+    font-size:30px;
+    color:#af473c;
+    margin-top:15px
+  }
+
+  .map-container {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  #map {
+    position: absolute;
+    width:50%;
+    height:50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 3.125em 0 3.125em 0;
+    align-self: center;
+    border:solid white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #000000;
   }
