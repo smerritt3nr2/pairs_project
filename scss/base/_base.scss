@@ -100,6 +100,7 @@
     p {
       font-size: 1.6875em;
       text-transform: none;
+      font-family: 'Baloo Thambi 2';
     }
     hr {
       width:9.125em;
@@ -111,6 +112,7 @@
       width: 40%;
       font-size: 20px;
       text-transform: uppercase;
+      font-family: 'Baloo Thambi 2';
     }
   }
 
@@ -143,6 +145,7 @@
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      font-family: 'Baloo Thambi 2';
     }
     li a:hover {
       text-decoration: underline;
@@ -173,6 +176,7 @@
     p {
       width: 40%;
       text-align: center;
+      font-family: 'Baloo Thambi 2';
     }
   }
 
@@ -292,7 +296,8 @@
   /* ============== Service page ======================= */
 
   .event-container {
-    margin:10px;
+    width: 80%;
+    margin:10px auto;
     display:flex;
     flex-direction: column;
     img {
@@ -317,8 +322,8 @@
     display:flex;
     flex-direction: column;
     p {
-      max-width: 75%;
       text-align: justify;
+      font-family: 'Baloo Thambi 2';
     }
   }
 
@@ -356,16 +361,18 @@
     hr {
       width:6.25em;
     }
+    p {
+      font-family: 'Baloo Thambi 2';
+    }
   }
 
   .testimonial-title {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    hr {
-      width:18.75em;
-      height:0.0625em;
-      margin-right: 62.5em;
+    .title-underline {
+    margin-left: 30px;
+    width: 400px;
     }
     h1 {
       font-size: 3.125em;

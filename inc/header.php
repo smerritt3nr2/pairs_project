@@ -25,8 +25,8 @@
                 <div class="nav-container">
                     <ul class="main-nav">
                         <li><a href="http://localhost:1234/Pairs-Project/inc/about.php">about us</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">testimonals</a></li>
+                        <li><a href="http://localhost:1234/Pairs-Project/inc/service.php">services</a></li>
+                        <li><a href="http://localhost:1234/Pairs-Project/inc/testimonial.php">testimonials</a></li>
                         <li><a href="http://localhost:1234/Pairs-Project/inc/contact.php">contacts</a></li>
                     </ul>
                 </div>
