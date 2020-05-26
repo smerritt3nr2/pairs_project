@@ -3,7 +3,7 @@
   h1 {
     font-family: 'Pacifico';
     font-size: 22px;
-    color: red;
+    color:#af473c;
   }
 
   
@@ -287,4 +287,87 @@
     border:solid white;
     border-radius: 20px;
     box-shadow: 2px 2px 4px #000000;
+  }
+
+  /* ============== Service page ======================= */
+
+  .event-container {
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+    img {
+      margin: 10px;
+      width: 300px;
+      height: 200px;
+      border-radius: 5px 20px 5px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 25px;
+      font-family: 'Baloo Thambi 2';
+      margin-bottom: 0;
+    }
+    hr {
+      width:9.125em;
+      margin-right: 62.5em;
+    }
+  }
+
+  .title-info-container {
+    display:flex;
+    flex-direction: column;
+    p {
+      max-width: 75%;
+      text-align: justify;
+    }
+  }
+
+  .s-b-s {
+    display:flex;
+    flex-direction: row;
+  }
+
+  /* ============== testimonial page ======================= */
+
+  .testimonial-container {
+    margin:0.625em;
+    display:flex;
+    flex-direction: row;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 0.625em;
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 0.625em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      height: 6.25em;
+      width: 6.25em;
+      border-radius: 50%;
+      border: solid;
+      align-self: center;
+    }
+    hr {
+      width:6.25em;
+    }
+  }
+
+  .testimonial-title {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    hr {
+      width:18.75em;
+      height:0.0625em;
+      margin-right: 62.5em;
+    }
+    h1 {
+      font-size: 3.125em;
+    }
   }
