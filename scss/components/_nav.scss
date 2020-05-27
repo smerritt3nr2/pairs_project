@@ -1,1 +1,32 @@
-//rd\hd\ne\d\n
+.nav-container {
+    width:100%;
+    height:50px;
+    background-color: #af473c;
+    position: relative;
+  }
+
+  .main-nav {
+    list-style-type: none;
+    overflow: hidden;
+    width:655px;
+    height:50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    position: absolute;
+    right:10%;
+    text-transform: uppercase;
+    li {
+      width:150px;
+    }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover {
+      text-decoration: underline;
+    }
+  }

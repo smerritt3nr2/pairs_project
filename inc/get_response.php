@@ -1,44 +1,66 @@
 <?php 
 require_once("connection.php");
-var_dump($dbh);
-//if((isset($_POST['your_name'])&& $_POST['your_name'] !='') && (isset($_POST['your_email'])&& $_POST['your_email'] !=''))
-if((isset($_POST['submit'])))
-{
-    require_once("contactform.php");
+$status = "";
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
 
-    $yourName = $dbh->real_escape_string($_POST['Name']);
-    $yourEmail = $dbh->real_escape_string($_POST['Email']);
-    $yourPhone = $dbh->real_escape_string($_POST['Number']);
-    $comments = $dbh->real_escape_string($_POST['Message']);
-    $sql="INSERT INTO contacts (name, email, phone, comments) VALUES ('".$yourName."','".$yourEmail."', '".$yourPhone."', '".$comments."')";
-    if(!$result = $dbh->query($sql)){
-        die('There was an error running the query [' . $dbh->error . ']');
+  $response = $_POST["g-recaptcha-response"];
+
+  $url = 'https://www.google.com/recaptcha/api/siteverify';
+  $data = array(
+	'secret' => '6LeVvfwUAAAAAGx_aqK3T8smEMW51x679jpzrHg3',
+	'response' => $_POST["g-recaptcha-response"]
+  );
+  $options = array(
+	'http' => array (
+		'method' => 'POST',
+		'content' => http_build_query($data)
+	)
+  );
+  $context  = stream_context_create($options);
+  $verify = file_get_contents($url, false, $context);
+  $captcha_success=json_decode($verify);
+
+  if ($captcha_success->success==false) { 
+	$status = "Please check you are not a robot";
+  } else if ($captcha_success->success==true) {
+    if(!isset($_POST['agreement'])){
+        $status = "Please check you agree";
+    } else {
+        if(empty($name) || empty($email) || empty($message)) {
+            $status = "All fields are compulsory.";
+        } else {
+            if(strlen($name) >= 255 || !preg_match("/^[a-zA-Z-'\s]+$/", $name)) {
+            $status = "Please enter a valid name";
+            } else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $status = "Please enter a valid email";
+            } else {
+
+            $sql = "INSERT INTO contacts (name, email, message) VALUES (:name, :email, :message)";
+
+            $stmt = $pdo->prepare($sql);
+            
+            $stmt->execute(['name' => $name, 'email' => $email, 'message' => $message]);
+
+            ////////////////////////////////////////////////////////////////////////////////
+            //              This is the email code which works when using a live server
+            // $mailTo = "Jeremy.lee@netmatters-scs.com";
+            // $headers = "From: ". $email;
+            // $txt = "You have received an e-mail from ". $name. ".\n\n".$message;
+        
+            // mail($mailTo, $txt, $headers);
+            // header("Location: index.php?mailsend");
+            /////////////////////////////////////////////////////////////////////////////////
+
+            $status = "Your message was sent";
+            $name = "";
+            $email = "";
+            $message = "";
+            }
+        }
     }
-    else
-    {
-        echo "Thank you! We will contact you soon";
-    }
+  }
+
 }
-else
-{
-echo "Please fill Name and Email";
-}
-
-
-
-
-// include(__DIR__ . '/connection.php');
-
-// $ID = [];
-// $name = [];
-// $email = [];
-// $telephone = [];
-// $message = [];
-
-// foreach($contacts as $contact){
-//     $ID[] =  $contact['ID'];
-//     $name[] = $contact['Name'];
-//     $email[] =  $contact['Email'];
-//     $telephone[] = $contact['Telephone'];
-//     $message[] =  $contact['Message'];
-// }

@@ -6,11 +6,6 @@
     color:#af473c;
   }
 
-  
-  .text-to-change {
-    font-family: 'Baloo Thambi 2';
-  }
-
   header{
     background: url('../img/lobster-head.jpg');
     background-size:cover;
@@ -25,18 +20,19 @@
     position: absolute;
     background: rgba(0,0,0,0.2)
   }
+  
+.main-font{   
+    font-family: 'Baloo Thambi 2';
+    font-size: 20px;
+    font-weight: normal;
+}
 
 /* ============== header Section ======================= */
 
-.header-container {
-  width:80%;
-  margin-left: auto;
-  margin-right: auto;
-  display:flex;
-  flex-direction: row;
-}
+
 
   .title-right {
+    margin-top: 30px;
     text-align: right;
     width:50%;
     height:3.75em;
@@ -57,7 +53,6 @@
       margin-bottom: 0px;
     }
     p {
-      font-family: 'Baloo Thambi 2';
       font-size: 50px;
       color: black;
       z-index: 2;
@@ -80,6 +75,9 @@
     text-decoration:none;
     width:6.25em;
     cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .title-topR {
@@ -91,8 +89,8 @@
     color:white;
     text-align: -webkit-right;
     h1 {
-      font-family: 'Baloo Thambi 2';
       font-size:60px;
+      
       text-transform: uppercase;
       color:white;
       margin-bottom: inherit;
@@ -100,7 +98,6 @@
     p {
       font-size: 1.6875em;
       text-transform: none;
-      font-family: 'Baloo Thambi 2';
     }
     hr {
       width:9.125em;
@@ -112,151 +109,133 @@
       width: 40%;
       font-size: 20px;
       text-transform: uppercase;
-      font-family: 'Baloo Thambi 2';
     }
   }
+/* ============== Main Section ======================= */
+.main-title {
+  font-size: 50px;
+  color: #af473c;
+  margin: 70px 0 8px;
+}
+.title-underline {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 200px;
+  height: 1px;
+}
+.main-about {
+  margin: 50px 0 0;
+}
+.inner-about {
+  font-weight: bold;
+  color: #af473c;
+}
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 70px 0 0;
+}
+.service-container {
+  width: 450px;
+}
+.service-image-container {
+  overflow: hidden;
+  width: 450px;
+  height: 225px;
+}
+.service-image {
+  width: 450px;
+ 
+}
+.service-title {
+  font-size: 30px;
+  color: #af473c;
+  text-align: center;
+  margin-top: 15px;
+}
+.service-underline {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 130px;
+  height: 1px;
+  margin: 20px 0 20px 160px;
+}
+.service-desc {
+  text-align: center;
+}
 
-/* ============== Navigation bar ======================= */
+/* ============== Carousel ======================= */
 
-  .nav-container {
-    width:100%;
-    height:50px;
-    background-color: #af473c;
-    position: relative;
-  }
-
-  .main-nav {
-    list-style-type: none;
-    overflow: hidden;
-    width:600px;
-    height:50px;
-    display:flex;
-    flex-direction: row;
-    justify-content: right;
-    position: absolute;
-    right:10%;
-    text-transform: uppercase;
-    li {
-      width:150px;
-    }
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-family: 'Baloo Thambi 2';
-    }
-    li a:hover {
-      text-decoration: underline;
-    }
-  }
-
-
-  /* =============== Sub Footer ======================== */
-
-  .book-container{
-    background-color: #3c3c3c;
-    color: white;
-    padding:2%;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    button {
-      height: auto;
-      width: 10%;
-      align-self: center;
-      border: none;
-      color: darkgoldenrod;
-      padding:0.5%;
-      font-size: 0.8125em;
-    }
-    p {
-      width: 40%;
-      text-align: center;
-      font-family: 'Baloo Thambi 2';
-    }
-  }
-
-
-   /* =============== main Footer ======================== */
-
-   .footer-container {
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    flex-direction: row;
-   }
-
-   .column-container {
-    display:flex;
-    flex-direction: row;
-    background-color: #af473c;
-    color:white;
-    justify-content: space-evenly;
-    font-family: 'Baloo Thambi 2';
-    h6 {
-      font-size:20px;
-      font-family: 'Baloo Thambi 2';
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    a {
-      color:white;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    hr {
-      width:8.125em;
-      align-self: left;
-      display: table-caption;
-    }
-   }
-
-  .foot-c3 {
-    i {
-      padding-right: 0.625em;
-    }
-  }
-
-  .copyright {
-    text-align: center;
-    font-size: 11px;
-    padding: 0 0 5px 0;
-    background-color: #af473c;
-    color:white;
-  }
-
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+}
+.carousel-wrapper * {
+ box-sizing: border-box;
+}
+.carousel {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 200px;
+}
+.carousel-overlay {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #2727279a;
+  opacity: 0.7;
+}
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top: -235%;
+  width: 100%;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+.carousel__photo.active {
+opacity: 1; 
+}
+.carousel-quote, .quote-author {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.carousel-text-overlay {
+  width: 70%;
+  margin: 80px auto 0;
+}
+.fas {
+  color: white;
+  transform: scale(2);
+}
+.fa-quote-left {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.fa-quote-right {
+  position: absolute;
+  top: 44%;
+  right: 10%;
+}
+.quote-underline {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 400px;
+  height: 1px;
+  margin: 25px auto;
+}
   /* ============== Contact us form ======================= */
 
-  .contact-container {
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    flex-direction: column;
-  }
-
-  .form-container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    flex-direction: column;
-    padding:10px;
-    box-shadow: 2px 2px 4px #000000;
-    input {
-      margin-bottom: 10px;
-    }
-    textarea {
-      margin-bottom:10px;
-    }
-  }
 
   .checkbox {
     margin-left: auto;
@@ -269,15 +248,6 @@
     font-size:30px;
     color:#af473c;
     margin-top:15px
-  }
-
-  .map-container {
-    height: 600px;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    flex-direction: column;
   }
   
   #map {
@@ -293,88 +263,53 @@
     box-shadow: 2px 2px 4px #000000;
   }
 
-  /* ============== Service page ======================= */
-
-  .event-container {
-    width: 80%;
-    margin:10px auto;
-    display:flex;
-    flex-direction: column;
-    img {
-      margin: 10px;
-      width: 300px;
-      height: 200px;
-      border-radius: 5px 20px 5px;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+/* ============== about us page ======================= */
+  .about-section {
+    .as-title {
+        font-size: 30px;
+        padding: 50px 0 8px;
     }
-    h1 {
-      font-size: 25px;
-      font-family: 'Baloo Thambi 2';
-      margin-bottom: 0;
+}
+.as-one {
+    height: 300px;
+    .as-title {
+        color: #af473c;
     }
-    hr {
-      width:9.125em;
-      margin-right: 62.5em;
-    }
+}
+.as-two {
+    height: 300px;
+    background-color: #af473c; 
+}
+.as-three {
+    height: 400px;
+   background-color:  #3c3c3c;
+   color: white;
+   .as-underline {
+       background-color: white;
+   }
+}
+.wf-overlay-container {
+    position: relative;
+}
+.workforce-overlay {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #2727279a;
+    opacity: 0.7;
+  }
+  .wf-overlay-text {
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      padding-top: 49vh;
   }
 
-  .title-info-container {
-    display:flex;
-    flex-direction: column;
-    p {
-      text-align: justify;
-      font-family: 'Baloo Thambi 2';
-    }
+/* ============== partners page ======================= */
+  .partner-title, .partner-underline {
+    margin-left: 10%;
   }
-
-  .s-b-s {
-    display:flex;
-    flex-direction: row;
-  }
-
-  /* ============== testimonial page ======================= */
-
-  .testimonial-container {
-    margin:0.625em;
-    display:flex;
-    flex-direction: row;
-  }
-
-  .profile {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    padding: 0.625em;
-    text-align: center;
-    background-color: whitesmoke;
-    margin: 0.625em;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin-left: auto;
-    margin-right: auto;
-    img {
-      height: 6.25em;
-      width: 6.25em;
-      border-radius: 50%;
-      border: solid;
-      align-self: center;
-    }
-    hr {
-      width:6.25em;
-    }
-    p {
-      font-family: 'Baloo Thambi 2';
-    }
-  }
-
-  .testimonial-title {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    .title-underline {
-    margin-left: 30px;
-    width: 400px;
-    }
-    h1 {
-      font-size: 3.125em;
-    }
-  }
+  

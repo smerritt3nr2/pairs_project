@@ -1,25 +1,14 @@
 <?php
 
+$hostname = "localhost";
+$port = 3306;
+$dbname = "pairs_project";
+$username = "root";
+$pw = "password";
 try {
-    $hostname = "localhost";
-    $port = 3306;
-    $dbname = "pairs_project";
-    $username = "root";
-    $pw = "password";
-    $dbh = new PDO ("mysql:host=$hostname:$port;dbname=$dbname","$username","$pw");
-} catch (PDOException $e) {
-    echo "Unable to Connect";
-    exit;
-}
-$stmt = $dbh->prepare("SELECT *
-                       FROM contacts
-                       ");
-$stmt->execute();
 
-try {
-$contacts = $stmt->fetchAll();
-} catch (Exception $e) {
-    echo "Unable to retrieve data";
-    exit;
+  $pdo = new PDO ("mysql:host=$hostname:$port;dbname=$dbname","$username","$pw");
+} catch(PDOException $e) {
+  echo "DB Connection Failed: " . $e->getMessage();
 }
-//$con=mysqli_connect("localhost","root","","password") or die(mysqli_error());
+

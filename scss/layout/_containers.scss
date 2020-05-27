@@ -1,1 +1,177 @@
-//egjwegwe
+.main-container, .testimonial-container, .about-container, .contact-container {
+    width: 80%;
+    margin: 0px auto;
+ }
+
+.header-container {
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: row;
+  }
+
+ /* =============== Sub Footer ======================== */
+  .book-container{
+    background-color: #3c3c3c;
+    color: white;
+    padding:2%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    button {
+      height: auto;
+      width: 10%;
+      align-self: center;
+      border: none;
+      color: darkgoldenrod;
+      padding:0.5%;
+      font-size: 0.8125em;
+      cursor: pointer;
+      &:hover {
+          text-decoration: underline;
+      }
+    }
+    p {
+      width: 40%;
+      text-align: center;
+    }
+  }
+
+  /* ============== Contact us form ======================= */
+  .contact-container {
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .form-container {
+    height: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    box-shadow: 2px 2px 4px #000000;
+    input {
+      margin-bottom: 10px;
+    }
+    textarea {
+      margin-bottom:10px;
+    }
+  }
+  .map-container {
+    height: 600px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+  }
+
+/* ============== Service page ======================= */
+
+.event-container {
+    width: 80%;
+    margin:10px auto;
+    display:flex;
+    flex-direction: column;
+    img {
+        margin: 10px;
+        width: 300px;
+        height: 200px;
+        border-radius: 5px 20px 5px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    h1 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    hr {
+        width:9.125em;
+        margin-right: 62.5em;
+    }
+}
+    
+.title-info-container {
+    display:flex;
+    flex-direction: column;
+    p {
+        text-align: justify;
+    }
+}
+    
+.s-b-s {
+    display:flex;
+    flex-direction: row;
+}
+/* ============== testimonial page ======================= */
+
+.testimonial-container {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 0.625em;
+    text-align: center;
+    background-color: whitesmoke;
+    margin: 0.625em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      height: 6.25em;
+      width: 6.25em;
+      border-radius: 50%;
+      border: solid;
+      align-self: center;
+    }
+    hr {
+      width:6.25em;
+    }
+  }
+
+  .testimonial-title {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    .title-underline {
+    margin-left: 87px;
+    width: 400px;
+    }
+    h1 {
+      font-size: 3.125em;
+    }
+  }
+
+  /* ============== partners page ======================= */
+  .partners-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 140px;
+    margin: 70px auto;
+    .partner {
+        width:33%;
+        img {
+            display: block;
+            margin: auto;
+            filter: grayscale(100%);
+        }
+    }
+}
+
+ /* ============== about us page ======================= */
+.about-container {
+    .title-underline {
+        margin-bottom: 70px;
+    }
+}

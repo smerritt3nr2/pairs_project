@@ -1,3 +1,8 @@
+<!-- ContactForm -->   
+<?php
+include(__DIR__ . '/get_response.php');
+?>
+<!-- ContactForm -->
 <!DOCTYPE html>
 <html>
     <head>   
@@ -15,8 +20,8 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
-        <!-- ===================================================================================== -->
-
+        <!-- =========================================Recaptcha======================================== -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body>
     <!-- Header -->   
@@ -26,31 +31,32 @@
     <!-- Header -->
         <form method="post">
             <div class="contact-container">
-                <div class="sub-title main-title">CONTACT US</div>
-                <span class="title-underline"></span>
-                <p class="contact-text">Netmatters<br />11 Penfold Drive<br />Wymondham<br />Norfolk<br />NR18 0WZ</p>
-                <p class="contact-text"><b>Telephone:</b> 01235-852-894<br /><b>E-mail:</b> info@Terracotta.com</p>
+                <div class="main-title main-font">CONTACT US</div>
+                <span class="title-underline main-font"></span>
+                <p class="contact-text main-font">Netmatters<br />11 Penfold Drive<br />Wymondham<br />Norfolk<br />NR18 0WZ</p>
+                <p class="contact-text main-font"><b>Telephone:</b> 01235-852-894<br /><b>E-mail:</b> info@Terracotta.com</p>
                     <div class="form-container">
-                        <label class="contact-text" for="name">Name:</label>
-                        <input class="contact-text" type="text" id="name" name="name">
-                        <label class="contact-text" for="email">Email:</label>
-                        <input class="contact-text" type="text" id="email" name="email">
-                        <label class="contact-text" for="number">Telephone:</label>
-                        <input class="contact-text" type="text" id="telephone" name="number">
+                        <label class="contact-text main-font" for="name">Name:</label>
+                        <input class="contact-text main-font" type="text" id="name" name="name">
+                        <label class="contact-text main-font" for="email">Email:</label>
+                        <input class="contact-text main-font" type="text" id="email" name="email">
+                        <label class="contact-text main-font" for="number">Telephone:</label>
+                        <input class="contact-text main-font" type="text" id="telephone" name="number">
                     
-                        <label class="contact-text" for="message">Message:</label>
-                        <textarea class="contact-text" name="message">Type your message in here.</textarea>
+                        <label class="contact-text main-font" for="message">Message:</label>
+                        <textarea class="contact-text main-font" name="message">Type your message in here.</textarea>
                     <!-- ================ GDPR Tickboxes ========================== -->
                         <div class="tickbox">
-                            <input type="checkbox" id="agreement">
-                            <label class="contact-text" for="agreement">I agree</label>
+                            <input type="checkbox" id="agreement" name="agreement">
+                            <label class="contact-text main-font" for="agreement">I agree</label>
                         </div>
                     <!-- ================ Recaptcha Area ========================== -->
-                        
+                    <div class="g-recaptcha" data-sitekey="6LeVvfwUAAAAAOMJHcTHT37vky5nYaB4BllUBdrb"></div>
                     
                         <input type="submit" value="Submit" name="submit" style="width:30%">
+                        <div class="status main-font"><?php echo $status ?></div>
                     </div>
-                    <div class="main-title">FIND US HERE</div>
+                    <div class="main-title main-font">FIND US HERE</div>
         <div class="title-underline"></div>
             </div>
         </form>
@@ -60,12 +66,7 @@
         </div>
 
 
-<!-- ContactForm -->   
-<?php
-include(__DIR__ . '/get_response.php');
-?>
-<!-- ContactForm -->
-<!-- <?php echo $name[0]; ?> -->
+
 <!-- Footer -->   
 <?php
 include(__DIR__ . '/footer.php');

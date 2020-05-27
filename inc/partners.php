@@ -1,5 +1,5 @@
 
-        <div class="main-title partner-title">PARTNERS</div>
+        <div class="main-title partner-title main-font">PARTNERS</div>
         <span class="title-underline partner-underline"></span>
         <div class="partners-container">
             <div class="partner">

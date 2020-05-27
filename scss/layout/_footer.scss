@@ -1,1 +1,46 @@
-//skmgojwnbejb vsjkebg;sb
+
+   .footer-container {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: row;
+   }
+
+   .column-container {
+    display:flex;
+    flex-direction: row;
+    background-color: #af473c;
+    color:white;
+    justify-content: space-evenly;
+    h6 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    a {
+      color:white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    hr {
+      width:8.125em;
+      align-self: left;
+      display: table-caption;
+    }
+   }
+
+  .foot-c3 {
+    i {
+      padding-right: 0.625em;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 11px;
+    padding: 0 0 5px 0;
+    background-color: #af473c;
+    color:white;
+  }

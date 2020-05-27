@@ -1,35 +1,24 @@
-.carousel-wrapper {
-    overflow: hidden;
-    width: 100%;
-    height: 400px;
-    margin-top: 100px;
-  }
-  .carousel-wrapper * {
-   box-sizing: border-box;
-  }
-  .carousel {
-    transform-style: preserve-3d;
-    position: relative;
-    height: 200px;
-  }
-  .carousel-overlay {
-    position: absolute;
-    z-index: 5;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 400px;
-    background-color: #2727279a;
-    opacity: 0.7;
-  }
-  .carousel__photo {
-    opacity: 0;
-    position: absolute;
-    top: -235%;
-    width: 100%;
-    transition: transform .5s, opacity .5s, z-index .5s;
-  }
- 
-.carousel__photo.active {
-  opacity: 1; 
+/* ============== about us page ======================= */
+
+.workforce-image {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wf-image-one {
+  background-image: url("../img/workforce.jpg");
+  min-height: 600px; 
+}
+.wf-image-two {
+  background-image: url("../img/workforceDiversity.jpg");
+  min-height: 400px; 
+}
+.wf-image-three {
+  background-image: url("../img/workforceHappy.jpg");
+  min-height: 500px; 
+}
+.wf-image-four {
+  background-image: url("../img/workforceKaren.PNG");
+  min-height: 100vh;
 }
