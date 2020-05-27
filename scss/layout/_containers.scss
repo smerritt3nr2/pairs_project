@@ -106,20 +106,20 @@
 }
     
 .s-b-s {
-    display:flex;
-    flex-direction: row;
+    display:block;
 }
 /* ============== testimonial page ======================= */
 
 .testimonial-container {
-    display:flex;
-    flex-direction: row;
+    display:block;
   }
-
+.mobile-container {
+  display: none;
+}
   .profile {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 100%;
     padding: 0.625em;
     text-align: center;
     background-color: whitesmoke;
@@ -143,10 +143,6 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    .title-underline {
-    margin-left: 87px;
-    width: 400px;
-    }
     h1 {
       font-size: 3.125em;
     }
@@ -154,7 +150,7 @@
 
   /* ============== partners page ======================= */
   .partners-container {
-    display: flex;
+    display: none;
     flex-direction: row;
     width: 80%;
     height: 140px;

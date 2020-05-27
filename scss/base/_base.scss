@@ -32,6 +32,7 @@
 
 
   .title-right {
+    display: none;
     margin-top: 30px;
     text-align: right;
     width:50%;
@@ -133,21 +134,21 @@
 }
 .services-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin: 70px 0 0;
+  .service-container {
+    width: 100%;
+  }
 }
-.service-container {
-  width: 450px;
-}
+
 .service-image-container {
   overflow: hidden;
-  width: 450px;
+  width: 100%;
   height: 225px;
 }
 .service-image {
-  width: 450px;
- 
+  width: 100%;
 }
 .service-title {
   font-size: 30px;
@@ -161,7 +162,7 @@
   background-color: black;
   width: 130px;
   height: 1px;
-  margin: 20px 0 20px 160px;
+  margin: 20px 0 20px 33%;
 }
 .service-desc {
   text-align: center;
@@ -170,6 +171,7 @@
 /* ============== Carousel ======================= */
 
 .carousel-wrapper {
+  display: none;
   overflow: hidden;
   width: 100%;
   height: 400px;
@@ -271,17 +273,17 @@ opacity: 1;
     }
 }
 .as-one {
-    height: 300px;
+    height: 450px;
     .as-title {
         color: #af473c;
     }
 }
 .as-two {
-    height: 300px;
+    height: 450px;
     background-color: #af473c; 
 }
 .as-three {
-    height: 400px;
+    height: 415px;
    background-color:  #3c3c3c;
    color: white;
    .as-underline {
@@ -310,6 +312,7 @@ opacity: 1;
 
 /* ============== partners page ======================= */
   .partner-title, .partner-underline {
+    display: none;
     margin-left: 10%;
   }
   

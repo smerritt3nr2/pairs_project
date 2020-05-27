@@ -16,7 +16,7 @@
     include(__DIR__ . '/header.php');
     ?>
     <!-- Header -->
-      <div class="about-container">
+    <div class="about-container">
         <div class="main-title main-font">ABOUT US</div>
         <span class="title-underline"></span>
         <div class="workforce-image wf-image-one"></div>
@@ -43,6 +43,7 @@
             </div>
         </div>
         <div class="workforce-image wf-image-four"></div>
+    </div>
     <!-- Footer -->   
     <?php
     include(__DIR__ . '/footer.php');

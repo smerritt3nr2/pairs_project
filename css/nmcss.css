@@ -541,6 +541,7 @@ header {
 /* ============== header Section ======================= */
 /* line 34, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-right {
+  display: none;
   margin-top: 30px;
   text-align: right;
   width: 50%;
@@ -548,19 +549,19 @@ header {
   text-transform: uppercase;
 }
 
-/* line 40, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 41, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-right i {
   padding-right: 0.625em;
 }
 
-/* line 45, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 46, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-left {
   text-align: left;
   width: 50%;
   display: block;
 }
 
-/* line 49, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 50, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-left h1 {
   font-family: 'Pacifico';
   font-size: 50px;
@@ -568,7 +569,7 @@ header {
   margin-bottom: 0px;
 }
 
-/* line 55, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 56, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-left p {
   font-size: 50px;
   color: black;
@@ -576,14 +577,14 @@ header {
   margin-top: 0px;
 }
 
-/* line 63, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 64, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .top-header {
   color: white;
   margin: 0 20px 100px 0;
   display: inline-block;
 }
 
-/* line 69, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 70, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .book-header {
   border: none;
   color: white;
@@ -595,24 +596,24 @@ header {
   cursor: pointer;
 }
 
-/* line 78, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 79, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .book-header:hover {
   text-decoration: underline;
 }
 
-/* line 83, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 84, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-topR {
   padding-top: 0.625em;
   height: 1.875em;
 }
 
-/* line 88, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 89, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-lowR {
   color: white;
   text-align: -webkit-right;
 }
 
-/* line 91, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 92, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-lowR h1 {
   font-size: 60px;
   text-transform: uppercase;
@@ -620,20 +621,20 @@ header {
   margin-bottom: inherit;
 }
 
-/* line 98, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 99, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-lowR p {
   font-size: 1.6875em;
   text-transform: none;
 }
 
-/* line 102, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 103, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-lowR hr {
   width: 9.125em;
   align-self: right;
   display: table-caption;
 }
 
-/* line 107, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 108, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-lowR button {
   height: 2.1em;
   width: 40%;
@@ -642,14 +643,14 @@ header {
 }
 
 /* ============== Main Section ======================= */
-/* line 115, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 116, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .main-title {
   font-size: 50px;
   color: #af473c;
   margin: 70px 0 8px;
 }
 
-/* line 120, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 121, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .title-underline {
   content: "";
   display: block;
@@ -658,43 +659,43 @@ header {
   height: 1px;
 }
 
-/* line 127, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 128, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .main-about {
   margin: 50px 0 0;
 }
 
-/* line 130, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 131, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .inner-about {
   font-weight: bold;
   color: #af473c;
 }
 
-/* line 134, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 135, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .services-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   margin: 70px 0 0;
 }
 
 /* line 140, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
-.service-container {
-  width: 450px;
+.services-container .service-container {
+  width: 100%;
 }
 
-/* line 143, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 145, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .service-image-container {
   overflow: hidden;
-  width: 450px;
+  width: 100%;
   height: 225px;
 }
 
-/* line 148, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 150, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .service-image {
-  width: 450px;
+  width: 100%;
 }
 
-/* line 152, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 153, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .service-title {
   font-size: 30px;
   color: #af473c;
@@ -702,43 +703,44 @@ header {
   margin-top: 15px;
 }
 
-/* line 158, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 159, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .service-underline {
   content: "";
   display: block;
   background-color: black;
   width: 130px;
   height: 1px;
-  margin: 20px 0 20px 160px;
+  margin: 20px 0 20px 33%;
 }
 
-/* line 166, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 167, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .service-desc {
   text-align: center;
 }
 
 /* ============== Carousel ======================= */
-/* line 172, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 173, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .carousel-wrapper {
+  display: none;
   overflow: hidden;
   width: 100%;
   height: 400px;
   margin-top: 100px;
 }
 
-/* line 178, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 180, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .carousel-wrapper * {
   box-sizing: border-box;
 }
 
-/* line 181, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 183, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .carousel {
   transform-style: preserve-3d;
   position: relative;
   height: 200px;
 }
 
-/* line 186, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 188, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .carousel-overlay {
   position: absolute;
   z-index: 5;
@@ -750,7 +752,7 @@ header {
   opacity: 0.7;
 }
 
-/* line 196, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 198, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .carousel__photo {
   opacity: 0;
   position: absolute;
@@ -759,45 +761,45 @@ header {
   transition: transform .5s, opacity .5s, z-index .5s;
 }
 
-/* line 203, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 205, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .carousel__photo.active {
   opacity: 1;
 }
 
-/* line 206, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 208, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .carousel-quote, .quote-author {
   color: white;
   font-size: 25px;
   text-align: center;
 }
 
-/* line 211, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 213, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .carousel-text-overlay {
   width: 70%;
   margin: 80px auto 0;
 }
 
-/* line 215, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 217, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .fas {
   color: white;
   transform: scale(2);
 }
 
-/* line 219, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 221, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .fa-quote-left {
   position: absolute;
   top: 20%;
   left: 10%;
 }
 
-/* line 224, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 226, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .fa-quote-right {
   position: absolute;
   top: 44%;
   right: 10%;
 }
 
-/* line 229, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 231, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .quote-underline {
   content: "";
   display: block;
@@ -808,7 +810,7 @@ header {
 }
 
 /* ============== Contact us form ======================= */
-/* line 240, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 242, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .checkbox {
   margin-left: auto;
   margin-right: auto;
@@ -816,14 +818,14 @@ header {
   flex-direction: row;
 }
 
-/* line 247, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 249, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .sub-title {
   font-size: 30px;
   color: #af473c;
   margin-top: 15px;
 }
 
-/* line 253, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 255, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 #map {
   position: absolute;
   width: 50%;
@@ -838,46 +840,46 @@ header {
 }
 
 /* ============== about us page ======================= */
-/* line 268, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 270, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .about-section .as-title {
   font-size: 30px;
   padding: 50px 0 8px;
 }
 
-/* line 273, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 275, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .as-one {
-  height: 300px;
+  height: 450px;
 }
 
-/* line 275, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 277, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .as-one .as-title {
   color: #af473c;
 }
 
-/* line 279, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 281, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .as-two {
-  height: 300px;
+  height: 450px;
   background-color: #af473c;
 }
 
-/* line 283, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 285, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .as-three {
-  height: 400px;
+  height: 415px;
   background-color: #3c3c3c;
   color: white;
 }
 
-/* line 287, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 289, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .as-three .as-underline {
   background-color: white;
 }
 
-/* line 291, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 293, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .wf-overlay-container {
   position: relative;
 }
 
-/* line 294, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 296, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .workforce-overlay {
   position: absolute;
   z-index: 5;
@@ -889,7 +891,7 @@ header {
   opacity: 0.7;
 }
 
-/* line 304, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 306, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .wf-overlay-text {
   color: white;
   font-size: 50px;
@@ -898,8 +900,9 @@ header {
 }
 
 /* ============== partners page ======================= */
-/* line 312, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
+/* line 314, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/base/_base.scss */
 .partner-title, .partner-underline {
+  display: none;
   margin-left: 10%;
 }
 
@@ -1038,22 +1041,25 @@ header {
 
 /* line 108, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
 .s-b-s {
-  display: flex;
-  flex-direction: row;
+  display: block;
 }
 
 /* ============== testimonial page ======================= */
-/* line 114, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
+/* line 113, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
 .testimonial-container {
-  display: flex;
-  flex-direction: row;
+  display: block;
+}
+
+/* line 116, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
+.mobile-container {
+  display: none;
 }
 
 /* line 119, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
 .profile {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 100%;
   padding: 0.625em;
   text-align: center;
   background-color: whitesmoke;
@@ -1085,32 +1091,26 @@ header {
 }
 
 /* line 146, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
-.testimonial-title .title-underline {
-  margin-left: 87px;
-  width: 400px;
-}
-
-/* line 150, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
 .testimonial-title h1 {
   font-size: 3.125em;
 }
 
 /* ============== partners page ======================= */
-/* line 156, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
+/* line 152, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
 .partners-container {
-  display: flex;
+  display: none;
   flex-direction: row;
   width: 80%;
   height: 140px;
   margin: 70px auto;
 }
 
-/* line 162, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
+/* line 158, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
 .partners-container .partner {
   width: 33%;
 }
 
-/* line 164, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
+/* line 160, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
 .partners-container .partner img {
   display: block;
   margin: auto;
@@ -1118,7 +1118,7 @@ header {
 }
 
 /* ============== about us page ======================= */
-/* line 174, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
+/* line 170, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_containers.scss */
 .about-container .title-underline {
   margin-bottom: 70px;
 }
@@ -1180,42 +1180,45 @@ header {
 }
 
 /* line 1, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/components/_nav.scss */
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 7, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/components/_nav.scss */
 .nav-container {
-  width: 100%;
-  height: 50px;
+  width: 150px;
+  height: 30em;
   background-color: #af473c;
   position: relative;
 }
 
-/* line 8, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/components/_nav.scss */
+/* line 14, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/components/_nav.scss */
 .main-nav {
   list-style-type: none;
-  overflow: hidden;
-  width: 655px;
-  height: 50px;
   display: flex;
-  flex-direction: row;
-  justify-content: right;
+  flex-direction: column;
   position: absolute;
-  right: 10%;
   text-transform: uppercase;
+  width: 150px;
 }
 
-/* line 19, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/components/_nav.scss */
+/* line 21, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/components/_nav.scss */
 .main-nav li {
   width: 150px;
 }
 
-/* line 22, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/components/_nav.scss */
+/* line 24, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/components/_nav.scss */
 .main-nav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  margin-top: 55px;
 }
 
-/* line 29, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/components/_nav.scss */
+/* line 31, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/components/_nav.scss */
 .main-nav li a:hover {
   text-decoration: underline;
 }
@@ -1327,6 +1330,142 @@ header {
 .wf-image-four {
   background-image: url("../img/workforceKaren.PNG");
   min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  /* ============== Header Section ======================= */
+  /* line 3, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  nav {
+    position: relative;
+  }
+  /* line 6, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .nav-container {
+    width: 100%;
+    height: 50px;
+  }
+  /* line 10, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .main-nav {
+    flex-direction: row;
+    justify-content: right;
+    width: 655px;
+    height: 50px;
+    overflow: hidden;
+    right: 10%;
+  }
+  /* line 17, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .main-nav li a {
+    text-align: center;
+    padding: 14px 16px;
+    margin-top: 0;
+  }
+  /* ============== Main Section ======================= */
+  /* line 24, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .services-container {
+    flex-direction: row;
+  }
+  /* line 26, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .services-container .service-container {
+    width: 450px;
+  }
+  /* line 30, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .service-image-container {
+    overflow: hidden;
+    width: 450px;
+    height: 225px;
+  }
+  /* line 35, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .service-image {
+    width: 450px;
+  }
+  /* line 38, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .service-underline {
+    margin: 20px 0 20px 160px;
+  }
+  /* ============== Partners Section ======================= */
+  /* line 42, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .partner-title, .partner-underline {
+    display: block;
+  }
+  /* line 45, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .partners-container {
+    display: flex;
+  }
+  /* ============== About Us Section ======================= */
+  /* line 49, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .as-one {
+    height: 320px;
+  }
+  /* line 52, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .as-two {
+    height: 320px;
+  }
+  /* line 55, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .as-three {
+    height: 325px;
+  }
+  /* ============== Service Section ======================= */
+  /* line 59, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .s-b-s {
+    display: flex;
+    flex-direction: row;
+  }
+  /* ============== testimonial page ======================= */
+  /* line 65, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .testimonial-title .title-underline {
+    margin-left: 87px;
+    width: 400px;
+  }
+  /* line 70, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .testimonial-container {
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 75, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .profile:nth-child(3) {
+    display: none;
+  }
+  /* line 78, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .profile {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1168px) {
+  /* ============== Header Section ======================= */
+  /* line 85, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .title-right {
+    display: block;
+  }
+}
+
+@media (min-width: 1725px) {
+  /* ============== Carousel Section ======================= */
+  /* line 94, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .carousel-wrapper {
+    display: block;
+  }
+  /* ============== About Us Section ======================= */
+  /* line 98, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .as-one {
+    height: 300px;
+  }
+  /* line 101, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .as-two {
+    height: 300px;
+  }
+  /* line 104, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .as-three {
+    height: 300px;
+  }
+  /* ============== testimonial page ======================= */
+  /* line 108, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .profile {
+    width: 20%;
+  }
+  /* line 111, ../../../../../../xampp/htdocs/test/Pairs-Project/scss/layout/_media-queries.scss */
+  .profile:nth-child(3) {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=nmcss.css.map */

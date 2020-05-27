@@ -1,11 +1,114 @@
+@media (min-width: 768px) {
+    /* ============== Header Section ======================= */
+    nav {
+        position: relative;
+    }
+    .nav-container {
+        width:100%;
+        height:50px;
+    }
+    .main-nav {
+        flex-direction: row;
+        justify-content: right;
+        width:655px;
+        height:50px;
+        overflow: hidden;
+        right:10%;
+        li a {
+            text-align: center;
+            padding: 14px 16px;
+            margin-top: 0;
+          }
+    }
+    /* ============== Main Section ======================= */
+    .services-container {
+        flex-direction: row;
+        .service-container {
+            width: 450px;
+          }
+    }
+    .service-image-container {
+        overflow: hidden;
+        width: 450px;
+        height: 225px;
+      }
+      .service-image {
+        width: 450px;
+      }
+      .service-underline {
+        margin: 20px 0 20px 160px;
+      }
+    /* ============== Partners Section ======================= */
+    .partner-title, .partner-underline {
+        display: block;
+      }
+      .partners-container {
+          display: flex;
+      }
+    /* ============== About Us Section ======================= */
+    .as-one {
+        height: 320px;
+    }
+    .as-two {
+        height: 320px;
+    }
+    .as-three {
+        height: 325px;
+    }
+    /* ============== Service Section ======================= */
+    .s-b-s {
+        display:flex;
+        flex-direction: row;
+    }
+    /* ============== testimonial page ======================= */
+    .testimonial-title {
+        .title-underline {
+        margin-left: 87px;
+        width: 400px;
+        }
+      }
+    .testimonial-container {
+        display:flex;
+        flex-direction: row;
+        
+    }
+    .profile:nth-child(3){
+        display: none;
+    }
+    .profile {
+        width: 40%;
+      }
+}
+
+@media (min-width: 1168px) {
+    /* ============== Header Section ======================= */
+    .title-right {
+        display: block;
+    }
+}
 
 
 
-
-
-
-
-
-
-
-
+@media (min-width: 1725px) {
+    /* ============== Carousel Section ======================= */
+    .carousel-wrapper {
+        display: block;
+      }
+       /* ============== About Us Section ======================= */
+    .as-one {
+        height: 300px;
+    }
+    .as-two {
+        height: 300px;
+    }
+    .as-three {
+        height: 300px;
+    }
+    /* ============== testimonial page ======================= */
+    .profile {
+        width: 20%;
+      }
+    .profile:nth-child(3){
+        display: flex;
+    }
+}

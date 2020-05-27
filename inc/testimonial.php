@@ -41,7 +41,7 @@
                     <p class="main-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </div>
-        <div class="testimonial-container">
+        <div class="testimonial-container mobile-container">
                 <div class="profile">
                     <img class="profile4-image" src="../img/woman2.jpg">
                     <h1 class="main-font">Sarah Junior</h1>
