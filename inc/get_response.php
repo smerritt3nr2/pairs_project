@@ -4,6 +4,7 @@ $status = "";
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   $name = $_POST['name'];
   $email = $_POST['email'];
+  $number = $_POST['number'];
   $message = $_POST['message'];
 
   $response = $_POST["g-recaptcha-response"];
@@ -29,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(!isset($_POST['agreement'])){
         $status = "Please check you agree";
     } else {
-        if(empty($name) || empty($email) || empty($message)) {
+        if(empty($name) || empty($email) || empty($message) || empty($number)) {
             $status = "All fields are compulsory.";
         } else {
             if(strlen($name) >= 255 || !preg_match("/^[a-zA-Z-'\s]+$/", $name)) {
@@ -38,11 +39,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $status = "Please enter a valid email";
             } else {
 
-            $sql = "INSERT INTO contacts (name, email, message) VALUES (:name, :email, :message)";
+            $sql = "INSERT INTO contacts (name, email, number, message) VALUES (:name, :email, :number, :message)";
 
             $stmt = $pdo->prepare($sql);
             
-            $stmt->execute(['name' => $name, 'email' => $email, 'message' => $message]);
+            $stmt->execute(['name' => $name, 'email' => $email, 'number' => $number, 'message' => $message]);
 
             ////////////////////////////////////////////////////////////////////////////////
             //              This is the email code which works when using a live server
@@ -57,6 +58,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $status = "Your message was sent";
             $name = "";
             $email = "";
+            $number = "";
             $message = "";
             }
         }
