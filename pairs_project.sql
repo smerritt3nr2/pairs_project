@@ -31,7 +31,7 @@ CREATE TABLE `contacts` (
   `ID` int(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `telephone` int(255) NOT NULL,
+  `number` int(255) NOT NULL,
   `message` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -39,7 +39,7 @@ CREATE TABLE `contacts` (
 -- Dumping data for table `contacts`
 --
 
-INSERT INTO `contacts` (`ID`, `name`, `email`, `telephone`, `message`) VALUES
+INSERT INTO `contacts` (`ID`, `name`, `email`, `number`, `message`) VALUES
 (1, 'Jeremy Lee', 'Jeremy.lee@netmatters-scs.com', 78234578, 'first message');
 
 --
